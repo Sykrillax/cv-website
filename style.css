@@ -346,3 +346,30 @@ footer {
     padding: 15px;
   }
 }
+
+.education-section {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.education-section h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.education-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.education-section li {
+  margin-bottom: 8px;
+}
+
