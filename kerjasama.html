@@ -23,7 +23,7 @@
   <main>
     <section class="form-section">
       <h2>Formulir Penawaran Kerjasama</h2>
-      <form action="#" method="post" enctype="multipart/form-data">
+      <form id="formNajwa" action="#" method="post" enctype="multipart/form-data">
 
         <div class="form-row">
           <label for="nama">Nama</label>
@@ -48,7 +48,7 @@
         <div class="form-row">
           <label>Jenis Kelamin</label>
           <div class="radio-group">
-            <label><input type="radio" name="gender" value="Laki-laki"> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="Laki-laki" required> Laki-Laki</label>
             <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
           </div>
         </div>
@@ -95,5 +95,14 @@
   <footer>
     <p>&copy; 2025 Najwa Khoirunissa Azzahroh</p>
   </footer>
+
+  <!-- NOTIFIKASI -->
+  <script>
+    document.getElementById("formNajwa").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Terima kasih! Formulir Anda telah berhasil dikirim.");
+      this.reset(); // reset form setelah submit
+    });
+  </script>
 </body>
 </html>
